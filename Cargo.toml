@@ -1,0 +1,9 @@
+[package]
+name = "rust-for-console"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.100"
+text_io = "0.1.13"
+walkdir = "2.5.0"
