@@ -27,4 +27,4 @@ itertools = "0.14"
 # 7. 并发加速：Python 做不到的，Rust 加一行代码就把 CPU 跑满
 rayon = "1.8"
 
-text_io = "0.1.13"
+text_io = "0.1"
