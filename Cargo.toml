@@ -4,6 +4,27 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+# 1. 错误处理：复刻 Python 的 Exception，一把梭，不纠结类型
 anyhow = "1.0.100"
-text_io = "0.1.13"
+
+# 2. 交互输入：复刻 Python input()，但带自动补全和校验
+inquire = "0.9.1"
+
+# 3. 命令行参数：复刻 argparse，但只要写结构体
+clap = { version = "4.4", features = ["derive"] }
+
+# 4. JSON处理：复刻 json 模块，类型安全版
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# 5. 文件/系统操作：复刻 os/shutil，而且支持 shell 命令
 walkdir = "2.5.0"
+xshell = "0.2" # 让你在 Rust 里写 Bash 脚本
+
+# 6. 列表操作：复刻 Python 列表推导式和 itertools
+itertools = "0.14"
+
+# 7. 并发加速：Python 做不到的，Rust 加一行代码就把 CPU 跑满
+rayon = "1.8"
+
+text_io = "0.1.13"
