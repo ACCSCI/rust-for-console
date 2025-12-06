@@ -5,7 +5,11 @@ pub mod preclude{
     pub use anyhow::{Result, Context};// 自动把 Result 变成 anyhow 的
     pub use text_io::{scan,read};
     pub use walkdir::WalkDir;
-
+    pub use rayon::prelude::*;
+    pub use inquire::{Text, validator::{StringValidator, Validation}};
+    pub use clap::Parser;
+    pub use xshell::{cmd, Shell};
+    pub use itertools::Itertools;
      // 你甚至可以封装自己的胶水函数
     pub fn pause() {
         
